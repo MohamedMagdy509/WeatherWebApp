@@ -11,7 +11,7 @@ let myButton = document.getElementById("myButton");
 
 
 async function getApi(myLocation) {
-    let myApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=eebb639b1fa14faabf871309221310&q=${myLocation}&days=3&aqi=no&alerts=no`);
+    let myApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=bc01e292a35040609aa174910232008&q=${myLocation}&days=3&aqi=no&alerts=no`);
     let myApiArr = await myApi.json();
     display(myApiArr);
 }
